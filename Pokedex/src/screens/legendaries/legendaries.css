@@ -1,0 +1,18 @@
+/* body{
+
+    background-color: #212121;
+} */
+
+.lg-box{
+    display: flex;
+justify-content: center;
+align-items: center;
+background-color: #212121;
+min-width: 100vw;
+min-height: 100vh;
+
+}
+
+h1{
+    color: white;
+}

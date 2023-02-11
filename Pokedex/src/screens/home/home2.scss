@@ -1,0 +1,311 @@
+.container{
+    height:80%;
+    width:100vw;
+    /* border: 3px solid purple; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+background:linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+
+
+}
+
+.container-1{
+    /* border: 3px solid red; */
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-2{
+    border: none;
+}
+
+.pikachuBanner{
+    width:26rem;
+}
+
+.heading{
+width:80%;
+/* border: 2px solid black; */
+font-family: 'Karla';
+font-style: normal;
+/* font-weight: 700; */
+font-size: 42px;
+line-height: 49px;
+text-align: center;
+letter-spacing: 4px;
+/* max-width: 400px; */
+}
+
+
+.subheading{
+    /* border: 2px solid rgb(38, 219, 204); */
+  Font-family: Karla;
+  Font-style: Regular;
+  Font-size: 28px;
+  font-weight: 400;
+  Line-height: 37px;
+  Line-height: 100%;
+  width:85%;
+  text-align: center;
+  }
+
+  .google-btn{
+    background-color: #73D677;
+    color:black;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 11px;
+    width: 312px;
+    height: 55px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  cursor: pointer;
+  /* position: absolute;
+  bottom: 12rem;
+  */
+  }
+
+  /* media */
+
+  @media (min-width: 512px)
+  {
+      .container-2{
+          display:grid;
+          place-content: center;
+      }
+  }
+
+  @media (min-width:768px){
+
+      .pikachuBanner{
+          position: absolute;
+          width: 38rem;
+          height: 30rem;
+          left: 96px;
+          top: 107px;
+      }
+
+      .container-1 {
+          height: 50%;
+      /* border: 3px solid red; */
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      }
+  }
+
+  @media (min-width: 800px){
+    .pikachuBanner{
+        position: absolute;
+        width: 42rem;
+        height: 34rem;
+        left: 96px;
+        top: 94px;
+    }
+    .container-1 {
+        height: 50%;
+    /* border: 3px solid red; */
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3px;
+    }
+}
+
+@media (min-width: 992px){
+
+    .container{
+        flex-direction: row;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    .pikachuBanner{
+        
+        left: 72px;
+        overflow: hidden;
+    }
+
+.container-2{
+    width: 62%;
+    height: 76%;
+    right: 0px;
+    top: -23px;
+    position: absolute;
+    /* border: 4px solid pink; */
+    overflow: hidden;
+}
+
+    .container-1 {
+        position: relative;
+        height: 72%;
+        left: -65px;
+        transform: translate(0px, 20px);
+    width:50%;
+    /* border: 3px solid red; */
+    flex-grow: 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px;
+    }
+
+    .heading{
+        position: absolute;
+        Font-size: 68px;
+        Line-height: 60px;
+        Vertical-align: Top;
+        Letter-spacing: 4px;
+        /* border: 5px solid purple; */
+        width: 30rem;
+        height: auto;
+        right: -47px;
+        top: 46px;
+        text-align: left;
+        }
+        
+        .subheading{
+            position: absolute;
+            /* border: 1px solid rgb(199, 29, 58); */
+            position: absolute;
+            Font-family: Karla;
+            Font-style: Regular;
+            Font-size: 28px;
+            Line-height: 37px;
+            Line-height: 100%;
+            width: 30rem;
+            right: -47px;
+            top: 262px;
+            text-align: left;
+        }
+
+
+        .google-btn{
+            position: absolute;
+            bottom: 40px;
+            right: 8rem;
+        }
+   
+}
+
+
+@media (min-width: 1024px){
+    .google-btn {
+        position: absolute;
+        bottom: 0px;
+        right: 8rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1440){
+
+    .container{
+        flex-direction: row;
+    }
+
+    .pikachuBanner{
+      
+            position: absolute;
+            transform: translate(0px, 41px);
+            // width: 36rem;
+            // height: 57rem;
+            left: 129px;
+            // top: -225px;
+            top: inherit;
+    
+    }
+
+.container-2{
+    width:50%;
+    height:100%;
+    position: relative;
+    /* border: 4px solid pink; */
+    overflow: hidden;
+}
+
+    .container-1 {
+        position: relative;
+        height: 75%;
+    width:50%;
+    /* border: 3px solid red; */
+    flex-grow: 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3px;
+    }
+
+    .heading{
+        position: absolute;
+        Font-size: 68px;
+        Line-height: 60px;
+        Vertical-align: Top;
+        Letter-spacing: 4px;
+        /* border: 5px solid purple; */
+        width: 30rem;
+        height: auto;
+        right: -47px;
+        top: 30px;
+        text-align: left;
+        }
+        
+        .subheading{
+            position: absolute;
+    /* border: 1px solid rgb(199, 29, 58); */
+    position: absolute;
+    Font-family: Karla;
+    Font-style: Regular;
+    Font-size: 28px;
+    Line-height: 37px;
+    Line-height: 100%;
+    width: 30rem;
+    right: -47px;
+    top: 262px;
+    text-align: left;
+        }
+
+
+        .google-btn{
+            position: absolute;
+            bottom: 25px;
+            right: 5rem;
+        }
+   
+}
+
+
+@media (min-width: 1400px)
+{
+    .google-btn{
+        position: absolute;
+        bottom: 25px;
+        right: 8rem;
+}
+
+.pikachuBanner{
+    .pikachuBanner {
+        top: -11px;
+    }
+}
+
+.container-2{
+    width: 70%;
+height: 100%;
+}
+}
+

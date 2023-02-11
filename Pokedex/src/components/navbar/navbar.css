@@ -1,0 +1,207 @@
+header{
+    display:flex;
+  /* border: 5px solid blue; */
+  /* justify-content: space-evenly; */
+  align-items: center;
+  box-shadow: 4px 0px 16px rgba(1, 28, 64, 0.2);
+  height: 5rem;
+  width:100%;
+background:linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+z-index: 999999;
+
+}
+
+
+.active-link{
+  color:red;
+}
+
+ul li::after {
+  content: "";
+  height: 0.063rem;
+  width: 0;
+  background: black;
+  display:flow-root;
+  margin-top: 11.5px;
+  transition: 0.5s ease-in-out;
+}
+
+ul li:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  margin-top: 11.5px;
+  background: black;
+  display:flow-root;
+}
+
+
+
+.logo{
+  display:flex;
+width: 30%;
+min-height: 100%;
+/* border: 2px solid green; */
+align-items: center;
+justify-content:center;
+}
+
+.logo-mob{
+display:flex;
+min-width: 100%;
+min-height: 100%;
+align-items: center;
+justify-content:center;
+display:none;
+}
+
+.logo-mob img{
+  width: 40.357rem;
+  height: 4.958rem;
+}
+
+.logo img{
+  width: 7.357rem;
+  height: 2.958rem;
+}
+
+
+.ulist{ 
+  text-decoration: none;
+  display:none; 
+}
+
+/* desktop nav */
+.desktopnav{
+  display:block;
+  text-decoration: none;
+}
+.desktopnav ul {
+  /* border: 5px solid green; */
+  width:100%;
+  cursor: pointer;
+  font-family:'Karla';
+  font-size: 1.5rem;
+  line-height:22.21px;
+  font-weight:400;
+}
+
+.desktopnav ul{
+  display:flex;
+  justify-content: space-evenly;
+  list-style: none;
+min-height: 100%;
+margin: 0px;
+}
+
+.desktopnav ul li {
+  color: #212121;
+}
+
+.desktopnav{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.hamy{
+  display:none;
+}
+
+@media screen and (max-width: 700px)
+{
+  .logo-mob{
+    display:flex;
+    min-width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content:center;
+    display:block;
+    }
+
+
+    
+  .logo{
+    justify-content: space-between;
+  }
+  .desktopnav{
+display:none;
+  }
+
+.ulist{
+  display:block;
+}
+
+.ulist{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.ulist ul{
+
+  display:flex;
+  justify-content: space-evenly;
+  list-style: none;
+min-height: 100%;
+margin: 0px;
+}
+
+.ulist ul {
+  cursor: pointer;
+  font-family:'Karla';
+  font-size: 1.5rem;
+  line-height:22.21px;
+  font-weight:400;
+}
+
+
+
+
+  .hamy{
+    display:block;
+    border: none;
+    background:none;
+    width: 3rem;
+    height: 2rem;
+    margin-right: 5px;
+    margin-bottom:5px;
+  }
+  
+  header{
+  flex-direction: column;
+  /* border: 5px solid blue; */
+
+  align-items: center;
+}
+
+.ulist{
+    position: relative;
+    background-color:#F2B807;
+}
+
+.ulist ul{
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+.ulist ul li{
+    padding: 10px;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+}
+.ulist{
+  width: 100%;
+} 
+}
+

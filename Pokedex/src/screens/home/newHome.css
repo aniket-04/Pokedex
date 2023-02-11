@@ -1,0 +1,337 @@
+.home{
+    /* display:flex;
+    flex-direction:column;
+    justify-content:space-between; */
+/* align-items:space-between; */
+display: grid;
+align-content: space-between;
+width: 100vw;
+min-height: 100vh;
+min-width:320px;
+  background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+
+  overflow-x:hidden;
+    
+    /* border-top: 4px solid purple; */
+    /* max-width:1140px; */
+}
+
+
+.home-container{
+    position: relative;
+    padding-top:10%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;  
+    align-items: center;
+    max-width: 1240px;
+    width: 100%;
+    height:auto;
+    /* min-height: 100%;   */
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.image-container{
+    /* position: relative; */
+    /* border: 2px solid cyan; */
+
+    width:22.43rem; 
+    height:17.93rem; 
+    max-width:65%;
+    max-height: auto;
+    z-index: 0;
+/* 
+    width:100%;
+    height:100%; */
+    /* height: 75%; */
+}
+
+.pikachuBanner
+{
+    max-width:100%;
+
+}
+
+.text-container{
+    /* border: 2px solid red; */
+    /* width:23rem; */
+    width:auto;
+height:20rem;
+display: flex;
+flex-direction: column;
+justify-content:space-around;
+align-items:center;
+min-width: 300px;
+}
+
+.heading{
+    font-family: 'Karla';
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 49px;
+text-align: center;
+letter-spacing: 4px;
+color: #000000;
+width:20rem;
+/* border: 1px solid black; */
+
+}
+
+.subheading{
+    left: 6.25%;
+right: 6.22%;
+top: 42.24%;
+bottom: 34.49%;
+
+/* border: 1px solid black; */
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+
+}
+
+.clikbtn{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content:center;
+}
+
+
+.google-btn {
+    background-color: #73D677;
+    color: black;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 11px;
+    width: 312px;
+    height: 55px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer;
+
+  }
+
+  @media (min-width:460px) and (max-width:650px)
+  {
+
+    .image-container
+    {
+        width:90%;
+        /* border: 2px solid cyan;  */
+    }
+
+    /* .heading{
+        font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #000000;
+    width: 85%;
+    height:auto;
+    border: 1px solid black;
+    } */
+
+    .text-container{
+        /* border: 2px solid red; */
+        /* width:23rem; */
+        width:auto;
+    height:24rem;
+    }
+
+    .heading{
+font-size: 45px;
+line-height: 55px;
+text-align: center;
+letter-spacing: 3px;
+width:80%;
+
+    }
+    .subheading{
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    width:90%;
+
+    }
+      
+  } 
+
+
+  @media (min-width:670px) 
+  /* and (max-width:800px) */
+  {
+
+    .pikachuBanner {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0px;
+    }
+
+    .image-container
+    {
+        width:40rem;
+        height: 30rem;
+        /* border: 2px solid cyan;  */
+    }
+
+    .text-container{
+        /* border: 2px solid red; */
+        /* width:23rem; */
+        width:auto;
+    height:30rem;
+    }
+
+
+    .heading{
+        font-size: 56px;
+        line-height: 55px;
+        text-align: center;
+        letter-spacing: 3px;
+        width:100%;
+        max-width: 742px;
+
+
+            }
+
+
+            .subheading{
+            font-size: 25px;
+            line-height: 28px;
+            text-align: center;
+            width:80%;
+
+            }
+
+  }
+
+
+  @media (min-width:1024px){
+      .home-container{
+        display:flex;
+        flex-direction:row;
+        padding-left: 1rem;
+        /* justify-content: space-between;   */
+        align-items: center;
+        max-width:100%;
+        width: 100%;
+        height:auto;
+        min-height: 100%;  
+        /* border: 2px solid green; */
+        overflow: hidden;
+      }
+
+      .image-container
+      {
+          width:50rem;
+          height: 55rem;
+          /* border: 2px solid cyan;  */
+      }
+
+      .pikachuBanner {
+          min-width: 100%;
+          min-height:100%;
+          z-index: 0;
+      }
+
+      .heading{
+          text-align:left;
+          align-self:flex-start;
+          width: 30rem;
+      }
+
+      .subheading{
+          width:28rem;
+          text-align:left;
+          align-self:flex-start;
+          z-index: 2;
+      }
+
+      .home-container{
+align-items:center;
+justify-content:center;
+      }
+
+      .clikbtn{
+          align-self: flex-start;
+          /* position: relative; */
+          /* left: -2rem; */
+      }
+
+  } 
+
+  @media (min-width:1224px)
+  {
+
+    .pikachuBanner{
+        display:none;
+    }
+
+    .image-container {
+background-image: url('src/assets/banner-sliced.svg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+width: 32rem;
+height: 32rem;
+position: relative;
+max-width: 100%;
+right: -7.25rem;
+justify-self: flex-end;
+align-self: flex-end;
+top: 1.75rem;
+/* border: 2px solid cyan; */
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: row;
+    padding-top:0px;
+    /* justify-content: space-between; */
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    /* border: 2px solid green; */
+    overflow: hidden;
+    position: relative;
+    left: 1.5rem;
+
+}
+  }
+
+
+@media (min-width:1440px){
+
+  .image-container {
+    background-image: url(src/assets/banner-sliced.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 40rem;
+    align-self: flex-end;
+    height: 34rem;
+    position: relative;
+    max-width: 100%;
+    right: -9.2rem;
+    justify-self: flex-end;
+    align-self: flex-end;
+    top: 0.5rem;
+  }
+}

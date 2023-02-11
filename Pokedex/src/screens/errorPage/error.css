@@ -1,0 +1,185 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Error-image-container {
+  padding-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.Error404-img {
+  height: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teamRocket-img{
+  height: 20rem;
+  position: absolute;
+}
+
+.error-rocket {
+  color: white;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 52.81px;
+  font-size: 21px;
+}
+
+.error-won {
+  position: relative;
+  top: -3.5rem;
+  color: black;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 52.81px;
+  font-size: 21px;
+}
+
+
+.Error-main-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #D93E30;
+  display:grid;
+  place-items: center;
+}
+
+.error-team {
+  display: none;
+}
+
+
+.errorMessage{
+  background-color:#D93E30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.return-btn{
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+      background-color:#F2CB07;
+      border: none;
+      outline: none;
+      box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+      border-radius: 11px;
+      width: 140px;
+      height: 40px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer;
+    }
+  
+    .Error-text-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      height: 7rem;
+    }
+  
+    .wonText-heading{
+      left: 21.33%;
+      right: 20.27%;
+      top: 55.3%;
+      bottom: 37.32%;
+      font-family: 'Karla';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 29px;
+      text-align: center;
+      color: white;
+    }
+  
+    .wonText-heading span{
+      color: black;
+    }
+  
+
+/* media */
+
+@media only screen and (min-width: 650px) {
+
+  
+  .Error404-img {
+    height: 26rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .teamRocket-img {
+    height: 26rem;
+    position: absolute;
+  }
+  
+  .Error-main-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #D93E30;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .error-team {
+    display: block;
+    margin-top: 5.5rem;
+    color: white;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    margin-left: 34rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 52.81px;
+    font-size: 27px;
+  }
+  .Error404-img {
+    height: 30rem;
+    margin-top: -6rem;
+  }
+  .teamRocket-img {
+    height: 30rem;
+    position: absolute;
+  }
+
+  .Error-main-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #D93E30;
+  }
+
+}
